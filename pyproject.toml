@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "move-off-dockerhub"
+version = "1.0"
+authors = [
+    {name = "YuviPanda", email = "yuvipanda@gmail.com"},
+]
+description = "A simple commandline utility to copy many tags (regex filtered) of a docker image from one registry to another"
+keywords = ["docker"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: AGPL",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+move-off-dockerhub = "move_off_dockerhub:main"
